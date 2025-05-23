@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Verificação de Alerta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ✅ MENU FIXO NO TOPO -->
+    <nav class="menu-fixo">
+        <a href="index.html" class="botao verde">➕ Cadastro</a>
+        <a href="historico.html" class="botao azul">📊 Histórico</a>
+        <a href="alerta.html" class="botao laranja">🚨 Alerta</a>
+    </nav>
+
+    <div class="container">
+        <h1>Verificação de Alerta</h1>
+
+        <form id="formAlerta">
+            <label for="usuarioId">Usuário ID:</label>
+            <input type="text" id="usuarioId" required><br>
+
+            <button type="submit">Verificar Alerta</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="alerta.js"></script>
+</body>
+
+</html>

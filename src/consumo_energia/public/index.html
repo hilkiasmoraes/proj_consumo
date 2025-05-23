@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Consumo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ✅ MENU FIXO NO TOPO -->
+    <nav class="menu-fixo">
+        <a href="index.html" class="botao verde">➕ Cadastro</a>
+        <a href="historico.html" class="botao azul">📊 Histórico</a>
+        <a href="alerta.html" class="botao laranja">🚨 Alerta</a>
+    </nav>
+
+    <div class="container">
+        <h1>Cadastro de Consumo</h1>
+
+        <form id="formConsumo">
+            <label for="usuarioId">Usuário ID:</label>
+            <input type="text" id="usuarioId" required><br>
+
+            <label for="quantidadeKwh">Quantidade kWh:</label>
+            <input type="number" id="quantidadeKwh" required><br>
+
+            <label for="dataLeitura">Data da Leitura:</label>
+            <input type="date" id="dataLeitura" required><br>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

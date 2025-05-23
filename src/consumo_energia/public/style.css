@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fundo geral */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  color: #333;
+  padding: 80px 20px 20px; /* Espaço para o menu fixo */
+}
+
+/* Menu fixo */
+.menu-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Botões do menu */
+.menu-fixo .botao {
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.menu-fixo .botao:hover {
+  transform: scale(1.05);
+}
+
+/* Cores dos botões */
+.botao.verde {
+  background: #10b981;
+}
+
+.botao.azul {
+  background: #3b82f6;
+}
+
+.botao.laranja {
+  background: #f97316;
+}
+
+/* Container central */
+.container {
+  background: #4f46e5; /* Azul do card */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Títulos */
+h1, h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Formulários */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+form input, form button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+
+form input {
+  background: rgba(255, 255, 255, 0.9);
+  color: #000;
+}
+
+form input::placeholder {
+  color: #666;
+}
+
+form button {
+  margin-top: 20px;
+  background: #10b981;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
+
+/* Mensagens */
+#resultado, #mensagem {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Lista de resultados */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+ul li {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  color: #fff;
+}

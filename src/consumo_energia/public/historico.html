@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta de Histórico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ✅ MENU FIXO NO TOPO -->
+    <nav class="menu-fixo">
+        <a href="index.html" class="botao verde">➕ Cadastro</a>
+        <a href="historico.html" class="botao azul">📊 Histórico</a>
+        <a href="alerta.html" class="botao laranja">🚨 Alerta</a>
+    </nav>
+
+    <div class="container">
+        <h1>Consulta de Histórico</h1>
+
+        <form id="formHistorico">
+            <label for="usuarioId">Usuário ID:</label>
+            <input type="text" id="usuarioId" required><br>
+
+            <label for="inicio">Data Início:</label>
+            <input type="date" id="inicio" required><br>
+
+            <label for="fim">Data Fim:</label>
+            <input type="date" id="fim" required><br>
+
+            <button type="submit">Consultar</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="historico.js"></script>
+</body>
+
+</html>
